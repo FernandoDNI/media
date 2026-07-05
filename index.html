@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#6366f1">
   <title>Prompt Manager — Administrador de Prompts</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="icon" href="imagenes/favicon.png" type="image/png">
 </head>
 <body>
   <div class="app-container">
@@ -15,13 +15,18 @@
     <!-- ═══ HEADER ═══ -->
     <header class="app-header" id="appHeader">
       <div class="header-brand">
-        <div class="header-logo" aria-hidden="true">⚡</div>
+        <img class="header-logo" src="imagenes/favicon.png" alt="Logo Prompt Manager">
         <div>
           <h1 class="header-title">Prompt Manager</h1>
           <p class="header-subtitle">Administra y organiza tus prompts de IA</p>
         </div>
       </div>
       <div class="header-actions">
+        <!-- Música de fondo -->
+        <button class="music-toggle" id="musicToggle" aria-label="Reproducir música de fondo" title="Música de fondo (Play/Mute)">
+          <span class="music-icon" id="musicIcon" aria-hidden="true">🔇</span>
+        </button>
+
         <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema claro/oscuro">
           <div class="theme-toggle-thumb">
             <span class="icon-sun" aria-hidden="true">☀️</span>
